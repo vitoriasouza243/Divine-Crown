@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="shortcut icon" type="image/png" href="./coroa_dourada.png">
+    <meta name="description" content="Joias">
+    <title>Document</title>
+</head>
+<body>
+    <header class="menu">
+        <div class="menu-logomarca">
+            <a href="./index.html" class="menu-logomarca">
+                <img class="menu-logo" src="./coroa_dourada.png" alt="Logo da Divine Crown" >
+                <h2 class="menu-marca">Divine Crown</h2>
+            </a>
+        </div>
+        
+        
+        <nav class="menu-navegar">
+            <a class="menu-item" >Serviços</a>
+            <a class="menu-item" href="contato.html">Contato</a>
+        </nav>
+                
+    </header>
+
+    <div class="banner"><h1>Entre em Contato!</h1></div>
+
+    <section>
+        <form id="contact-form" action="https://api.staticforms.xyz/submit" method="post" class="form">
+            <input type="hidden" name="accessKey" value="0a301aa0-4ff4-4e8f-bf64-1f81ad19790e">
+            <label for="name" class="titulo">Nome:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email" class="titulo">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="message" class="mmessage">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          
+            <button class="botao" type="button" onclick="submitForm()">Enviar E-mail</button>
+            <input type="hidden" name="redirectTo" value="./index.html"> 
+          </form>
+    </section>
+
+    <main class="conteudo">
+    
+</body>
+</html>

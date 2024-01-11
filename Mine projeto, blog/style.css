@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&family=Pinyon+Script&display=swap');
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 1.2s;
+}
+
+.menu-logomarca {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding:  24px;
+}
+.menu-logo {
+    height: 80px;
+}
+.menu-marca {
+    color: #fff;
+    font-family: 'Noto Serif', serif;
+    margin: 0;
+}
+
+.menu-navegar {
+    display: flex;
+    gap: 32px;
+}
+
+.menu-item {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+}
+
+.conteudo-message{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.conteudo-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-santo {
+    margin-top: 10px;
+    height: 400px;
+}
+
+.conteudo-titulo {
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteudo-texto {
+    width: 800px;
+    height: auto;
+}
+
+.conteudo-message2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.message-texto {
+    border-top:  0.4px solid #fff;
+    width: 800px;
+    height: auto;
+}
+
+.banner {
+    background-image: url('./banner.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding-top: 40px;
+}
+
+
+.banner h1 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 100px;
+    text-align: right;
+}
+
+.banner span{
+    color: #e9c96b;
+}
+
+header.rolagem {
+    background-color: #fff;
+    padding:  24px;
+}
+
+header.rolagem a,
+header.rolagem h2 {
+    color: #d7a905;
+}
+
+.conteudo-principal {
+    padding: 5% 25% 5% 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.conteudo-principal-titulo {
+    font-size: 24px;
+    color: #d7a905;
+    padding-bottom: 20px;
+}
+.historia {
+    text-indent: 60px;
+    padding: 10px;
+    margin: 0;
+}
+
+.persona {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.persona.rolagem {
+    animation: ascender-esquerda-direita 2s ease-in-out forwards;
+}
+ .edu, .isa, .ric {
+    border-radius: 50% 50%;
+    width: 300px;
+ }
+
+ @keyframes ascender-esquerda-direita {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.co-fundador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    width: 300px;
+    text-indent: 60px;
+    padding-top: 24px;
+    padding-bottom: 200px;
+}
+
+footer {
+    background-color: #d7a905;
+    height: 60px;
+    
+}
+
+footer h3{
+    color: #fff;
+    text-align: center; 
+    font-size: 14px;
+    padding: 20px;
+}
